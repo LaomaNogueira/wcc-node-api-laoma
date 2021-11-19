@@ -4,7 +4,7 @@ const database = require('../models');
 const tabelaArtigos = database.artigos;
 
 //cria um novo artigo:
-exports.create = (req, res) => {
+exports.criarArtigo = (req, res) => {
     const artigo = {
         titulo: req.body.titulo,
         descricao: req.body.descricao,
@@ -20,3 +20,12 @@ exports.create = (req, res) => {
     
 };
 
+exports.buscarArtigos = (req, res) => {
+    tabelaArtigos.findAll()
+    .then((data) => res.send(data))
+    .catch((error) => {
+        console.log(error);
+        res.status(500).send("Ocorreu um erro ao obter os artigos!");
+    })
+    
+};

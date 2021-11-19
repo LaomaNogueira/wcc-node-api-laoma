@@ -21,7 +21,9 @@ module.exports = (app) => {
     const artigosController = require('../controllers/artigos.controller');
     let router = require("express").Router();
 
-    router.post('/', artigosController.create);
+    router.post('/', artigosController.criarArtigo);
+
+    router.get("/", artigosController.buscarArtigos);
 
     app.use('/artigos', router);
 }
