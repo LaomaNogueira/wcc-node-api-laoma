@@ -17,7 +17,7 @@
 Projeto desenvolvido durante o Programa Women Can Code - 6ª Edição. </p>
 
 <p align="center">
-<img src="http://img.shields.io/static/v1?label=STATUS&message= FINALIZADO &color=blue&style=for-the-badge"/>
+<img src="http://img.shields.io/static/v1?label=STATUS&message= EM DESENVOLVIMENTO &color=blue&style=for-the-badge"/>
 </p>
 
 <hr>
