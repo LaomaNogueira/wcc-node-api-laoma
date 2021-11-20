@@ -1,8 +1,9 @@
 const databaseConfig = require('../config/db.config');
 const Sequelize = require('sequelize');
 
-const sequelizeOptions = { dialect: databaseConfig.dialect };
-const sequelizeDatabase = new Sequelize(databaseConfig.connectionStringUrl, sequelizeOptions);
+const { dialect, connectionStringUrl } = databaseConfig;
+const sequelizeOptions = { dialect };
+const sequelizeDatabase = new Sequelize(connectionStringUrl, sequelizeOptions);
 
 const database = {
     Sequelize,           // equivale a -> Sequelize: Sequelize
@@ -13,4 +14,3 @@ const artigosModel = require("./artigos.model");
 database.artigos = artigosModel(sequelizeDatabase, Sequelize);
 
 module.exports = database;
-//const Op = Sequelize.Op;
