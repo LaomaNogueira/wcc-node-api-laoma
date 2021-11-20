@@ -1,21 +1,4 @@
-//rotas do sistema de artigos do
-
-/*
-GET
-    obter todos os artigos--
-    obter um artigo específico--
-    obter todos os artigos publicados
-
-POST
-    criar um novo artigo
-
-PUT
-    Publicar meu artigo
-    Alterar
-
-DELETE
-    Deletar uma artigo
-*/
+//rotas do sistema de artigos
 
 module.exports = (app) => {
     const artigosController = require('../controllers/artigos.controller');
@@ -30,6 +13,12 @@ module.exports = (app) => {
     router.get("/titulo", artigosController.buscarArtigoPorTitulo);
 
     router.get("/publicados", artigosController.buscarArtigosPublicados);
+
+    router.put("/:id", artigosController.atualizarArtigo);
+
+    router.delete("/", artigosController.deletarTodosOsArtigos);
+
+    router.delete("/:id", artigosController.deletarArtigo);
 
     app.use('/artigos', router);
 }
