@@ -46,7 +46,7 @@ Com a API em funcionamento, vamos rodar os testes via [Insomnia](https://insomni
 
 ## Contato
 
-### Laoma Nogueira
+#### Laoma Nogueira
 
 <p align="left"> 🤝 Se tiver interesse em conversar comigo, será ótimo trocar uma ideia com você! Estes são os meus contatos: </p>
 
