@@ -9,7 +9,6 @@
 
 <hr>
 
-
 <!-- ABOUT -->
 
 ## Sobre
@@ -22,6 +21,7 @@ Projeto desenvolvido durante o Programa Women Can Code - 6ª Edição. </p>
 </p>
 
 <hr>
+
 <!-- OPERATION -->
 
 ## Funcionamento
@@ -31,6 +31,7 @@ Com a API em funcionamento, vamos rodar os testes via [Insomnia](https://insomni
 ![sistema-de-artigos-insomnia](https://user-images.githubusercontent.com/88911231/142739955-8bc873f2-6f20-4186-83d1-bb05326a4345.gif)
 
 <hr>
+
 <!-- TECHNOLOGIES -->
 
 ## Tecnologias️
@@ -40,6 +41,7 @@ Com a API em funcionamento, vamos rodar os testes via [Insomnia](https://insomni
   - [PostgreSQL](https://www.postgresql.org/)
 
 <hr>
+
 <!-- CONTACT -->
 
 ## Contato
